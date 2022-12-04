@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.formInput .err-message {
+  display: none;
+}
+
+input:invalid[focused="true"] ~ .err-message {
+  display: block !important;
+}
