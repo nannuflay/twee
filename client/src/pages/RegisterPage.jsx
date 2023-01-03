@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./../components/shared/Button";
 
 export default function RegisterPage() {
   return (
@@ -43,10 +44,11 @@ export default function RegisterPage() {
               placeholder="Confirm Password"
             />
           </div>
-          <div className=" pt-4">
-            <button className=" btn btn-secondary btn-block rounded-full">
-              Create Account
-            </button>
+          <div className="pt-4">
+            <Button
+              text="Create account"
+              customClass=" btn-secondary btn-block rounded-full"
+            />
           </div>
         </form>
       </div>
